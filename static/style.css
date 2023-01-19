@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #faf7f7;
+}
+
+/*_________________________________ Home Page ______________________________*/
+
+.home-page {
+    
+}
+
+.home-page .contr{
+     margin:0 150px;
+}
+/* _____________Intro___________ */
+.home-page .intro{
+    margin-top: 0px;
+    height: 0px;
+    background: #000;
+}
+
+/*__________ Tarjumi hol________ */
+.home-page .tarj-hol{
+    padding: 20px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 /20%), 0 4px 20px 0 rgb(0 0 0/19%);
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background:#ffefc9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-top: 20px;
+}
+.home-page .tarj-hol img{
+    float: left;
+    margin: -20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    width: 200px;
+    border-radius: 15px 0 15px 0px;
+}
+.home-page .tarj-hol h2{
+    text-align: center;
+}
+.footrrvre{
+    display: flex;
+    justify-content: flex-end;
+}
+.comments-efmie{
+    background: rgb(255, 255, 255);
+    height: 550px;
+    width: 800px;
+    position: absolute;
+    transform: translate(-20px,-20px);
+    display: none;
+    padding: 20px;
+    opacity: 0.95 ;
+}
+.comments-efmie #user-foto{
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    transform: translate(20px,20px);
+}
+#ef3e4y6{
+    margin-left: 120px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.vfvfvfvfvf{
+    height: 400px;  
+    overflow: auto;
+}
+#r4wf4t65{
+    margin-left: 40px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.com-new-txt{
+    width: 75%;
+    height: 40px;
+    font-size: 18px;
+    border: solid 1px #d6d6d6;
+    padding: 0 10px;
+}
+.com-new-btn{
+    width: 20%;
+    height: 40px;
+    background: rgb(221, 218, 218);
+    border-radius: 0px;
+    border: none;
+    font-size: 18px;
+}
+.com-new-btn:hover{
+    background: rgb(146, 146, 146);
+}
+.btnfdf{
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+    
+}
+.btnfdf:hover{
+    background: #000;
+    color: #faf7f7;
+}
+#dfg{
+    transition: 0.6s;
+}
+#dfg:hover{
+    position: absolute;
+    width: 300px;
+    border-radius: 15px 0 15px 0px;
+}
+
+/*_____________________________________ End Home Page ________________________________*/
+

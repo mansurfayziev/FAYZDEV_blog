@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+
+</style>
+<br>
+    <div class="container-fluid">
+        <div class="card34">
+            <div class="card-body">
+                <h1 class="card-title">{{ object.title }}</h1>
+                <br>
+               <i> <h6 class="card-subtitle mb-2 text-muted">Автор: {{ object.author }} | {{ object.date }}</h6></i>
+                {% if object.photo  %}
+                <br><br>
+                <img class="card-img-top gedgf" src="{{ object.photo.url }}" alt="{{ object.title }}">
+                <br><br>
+                {% endif %}
+                <p class="card34-text">{{ object.body | safe }}</p>
+                <a href="{% url 'article_edit' article.pk %}">Редактировать</a> | 
+                <a href="{% url 'article_delete' article.pk %}" class="text-danger">Удалить</a>     &nbsp;
+                <a href="{% url 'article_list' %}" class="btn btn-info"> Все статьи</a>
+            </div>
+            <div class="card34">
+                <div class="card34-header">Комментарий</div>
+                {% if article.comments.all %}
+                   {%  for comment in article.comments.all %}
+                    <div class="card34-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>{{ comment }}</p>
+                            <footer class="blockquote-footer">{{ comment.author }} </footer>
+                        </blockquote>
+                    </div>
+                {% endfor %}
+                <br>
+                
+                {% endif %}
+              
+            </div>
+        </div>
+    
+        <p></p>
+    </div>
+{% endblock %}
